@@ -5,6 +5,8 @@ import cn.iocoder.mall.promotion.api.bo.PromotionActivityBO;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
