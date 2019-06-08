@@ -1,6 +1,8 @@
 package utils;
 
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * @program: onemall
@@ -82,6 +84,8 @@ public class OwnerArrayList<E> {
 
         list.removeElement(2);
         System.out.println(list.toString());
+
+        List<String> list1 = new LinkedList<>();
     }
 
 
