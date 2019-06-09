@@ -13,9 +13,9 @@ public class MyFirstIoClass {
     public static void main(String[] args) {
         MyFirstIoClass io = new MyFirstIoClass();
         String path = "/Users/noudepc/IdeaProjects/onemall/kafka-common/test1.text";
-        io.testIoRead(path);
-        io.testIoWrite("你好呀好北京\r\n", path);
-        io.testIoRead(path);
+        String path2  = "/Users/noudepc/IdeaProjects/onemall/kafka-common/test2.text";
+
+        io.copyFiles(path, path2);
     }
 
     private void testIoRead(String path){
@@ -24,7 +24,7 @@ public class MyFirstIoClass {
         int temp = -1;
         InputStream inputStream = null;
         try {
-            byte[] car = new byte[3];
+            byte[] car = new byte[1024];
             inputStream = new FileInputStream(file);
             while ((temp=inputStream.read(car)) != -1){
                 String str = new String(car, 0 ,temp);
@@ -44,6 +44,7 @@ public class MyFirstIoClass {
             }
         }
     }
+
     private void testIoWrite(String msg, String path){
         File file = new File(path);
 
@@ -92,6 +93,46 @@ public class MyFirstIoClass {
                 }
             }
         }
+    }
 
+    private void copyFiles(String srcPath,String destPath){
+        //1.创建源
+        File src = new File(srcPath);
+        File dest = new File(destPath);
+        //2. 选择流
+        InputStream is = null;
+        OutputStream os = null;
+
+        int temp = -1;
+        try {
+            //3. 分段读取
+            is = new FileInputStream(src);
+            os = new FileOutputStream(dest);
+
+            byte[] bytes = new byte[256];
+            while ((temp = is.read(bytes)) != -1){
+                os.write(bytes, 0 ,bytes.length);
+            }
+        } catch ( FileNotFoundException e ) {
+            e.printStackTrace();
+        } catch ( IOException e ) {
+            e.printStackTrace();
+        }finally {
+            //4. 释放，先打开后关闭
+            if(os != null){
+                try {
+                    os.close();
+                } catch ( IOException e ) {
+                    e.printStackTrace();
+                }
+            }
+            if(is != null){
+                try {
+                    is.close();
+                } catch ( IOException e ) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }
