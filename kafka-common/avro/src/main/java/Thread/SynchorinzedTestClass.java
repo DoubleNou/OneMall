@@ -59,7 +59,46 @@ public class SynchorinzedTestClass {
         }
         System.out.println(list.size());
 
+        Account account = new Account("结婚礼金",100);
+        new Rawing(account, 80, "悲催的你").start();
+        new Rawing(account, 90, "happy的她").start();
+
+    }
 
 
+    static class Account{
+        private String name;
+        private Integer money;
+
+        public Account(String name, Integer money) {
+            this.name = name;
+            this.money = money;
+        }
+    }
+
+    static class Rawing extends Thread{
+        private Account account;
+        private int drawMoney;
+        private int packetTotal;
+
+        public Rawing(Account account, Integer drawMoney, String name) {
+            super(name);
+            this.account = account;
+            this.drawMoney = drawMoney;
+        }
+
+        @Override
+        public void run() {
+
+            if (account.money < 0){
+                return;
+            }
+            account.money -= drawMoney;
+            packetTotal += drawMoney;
+
+            System.out.println(this.getName()+"----->账户余额"+account.money);
+            System.out.println(this.getName()+"----->口袋中的钱"+packetTotal);
+
+        }
     }
 }
