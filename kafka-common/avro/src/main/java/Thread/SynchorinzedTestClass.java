@@ -2,6 +2,9 @@ package Thread;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @program: kafka-common
@@ -45,18 +48,19 @@ public class SynchorinzedTestClass {
 
         List<Integer> list = new ArrayList<>();
 
+        ExecutorService service = new ScheduledThreadPoolExecutor(10);
         for (int i=0;i<10000;i++){
             int finalI = i;
-            new Thread(()->{
-                try {
-                    Thread.sleep(10);
-                } catch ( InterruptedException e ) {
-                    e.printStackTrace();
-                }
-                list.add(finalI);
-            }).start();
-
+        service.submit(()->{
+            try {
+                Thread.sleep(10);
+            } catch ( InterruptedException e ) {
+                e.printStackTrace();
+            }
+            list.add(finalI);
+        });
         }
+
         System.out.println(list.size());
 
         Account account = new Account("结婚礼金",100);

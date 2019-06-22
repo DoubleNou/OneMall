@@ -24,6 +24,7 @@
         <module>promotion</module>
         <module>search</module>
         <module>kafka-common</module>
+        <module>onemall-gate</module>
     </modules>
     <packaging>pom</packaging>
 
