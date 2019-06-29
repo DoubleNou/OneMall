@@ -1,0 +1,7 @@
+cn/iocoder/mall/search/api/bo/ProductPageBO.class
+cn/iocoder/mall/search/api/ProductSearchService.class
+cn/iocoder/mall/search/api/dto/ProductConditionDTO.class
+cn/iocoder/mall/search/api/bo/ProductBO.class
+cn/iocoder/mall/search/api/bo/ProductConditionBO.class
+cn/iocoder/mall/search/api/bo/ProductConditionBO$Category.class
+cn/iocoder/mall/search/api/dto/ProductSearchPageDTO.class

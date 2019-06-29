@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>gate-websocket</module>
+        <module>gate-websocket-client</module>
     </modules>
 
 

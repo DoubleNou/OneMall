@@ -34,6 +34,10 @@ public class ObjectIoClass {
             System.out.println(objectInputStream.read());
             System.out.println(objectInputStream.read());
             System.out.println(objectInputStream.read());
+            System.out.println(objectInputStream.read());
+
+            System.out.println(objectInputStream.read());
+
 
             Object employee = objectInputStream.readObject();
 
@@ -57,7 +61,7 @@ class Employee implements Serializable{
     String  name;
     String salary;
 
-    public String getName() {
+    public  String getName() {
         return name;
     }
 

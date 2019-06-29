@@ -1,0 +1,7 @@
+cn/iocoder/mall/spring/boot/web/AdminMVCAutoConfiguration.class
+cn/iocoder/mall/spring/boot/swagger/SwaggerAutoConfiguration.class
+cn/iocoder/mall/spring/boot/swagger/SwaggerProperties.class
+cn/iocoder/mall/spring/boot/web/handler/GlobalExceptionHandler.class
+cn/iocoder/mall/spring/boot/web/handler/GlobalResponseBodyHandler.class
+cn/iocoder/mall/spring/boot/web/UserMVCAutoConfiguration.class
+cn/iocoder/mall/spring/boot/web/interceptor/AccessLogInterceptor.class

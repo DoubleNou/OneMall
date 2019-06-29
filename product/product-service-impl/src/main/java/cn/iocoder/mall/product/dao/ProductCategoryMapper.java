@@ -15,7 +15,7 @@ public interface ProductCategoryMapper {
 
     List<ProductCategoryDO> selectList();
 
-    ProductCategoryDO selectById(@Param("id") Integer id);
+    ProductCategoryDO selectById(Integer categoryId);
 
     List<ProductCategoryDO> selectByIds(@Param("ids") Collection<Integer> ids);
 

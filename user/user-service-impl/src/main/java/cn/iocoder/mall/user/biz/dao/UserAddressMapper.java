@@ -23,18 +23,18 @@ public interface UserAddressMapper {
     );
 
     List<UserAddressDO> selectByUserIdAndDeleted(
-            Integer deleted,
-            Integer userId
+            @Param("deleted") Integer deleted,
+            @Param("userId") Integer userId
     );
 
     UserAddressDO selectByUserIdAndId(
-            Integer userId,
-            Integer id
+            @Param("userId")  Integer userId,
+            @Param("id") Integer id
     );
 
     UserAddressDO selectHasDefault(
-            Integer deleted,
-            Integer userId,
-            Integer hasDefault
+            @Param("deleted")Integer deleted,
+            @Param("userId") Integer userId,
+            @Param("hasDefault") Integer hasDefault
     );
 }

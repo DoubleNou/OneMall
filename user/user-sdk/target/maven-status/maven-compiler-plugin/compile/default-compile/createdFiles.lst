@@ -1,0 +1,4 @@
+cn/iocoder/mall/user/sdk/context/UserSecurityContext.class
+cn/iocoder/mall/user/sdk/interceptor/UserSecurityInterceptor.class
+cn/iocoder/mall/user/sdk/context/UserSecurityContextHolder.class
+cn/iocoder/mall/user/sdk/annotation/PermitAll.class

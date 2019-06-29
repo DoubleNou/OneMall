@@ -1,0 +1,8 @@
+cn/iocoder/mall/search/biz/mq/PayTransactionPaySuccessConsumer.class
+cn/iocoder/mall/search/biz/convert/ProductSearchConvertImpl.class
+cn/iocoder/mall/search/biz/constant/FieldAnalyzer.class
+cn/iocoder/mall/search/biz/dataobject/ESProductDO.class
+cn/iocoder/mall/search/biz/convert/ProductSearchConvert.class
+cn/iocoder/mall/search/biz/config/JPAConfiguration.class
+cn/iocoder/mall/search/biz/dao/ProductRepository.class
+cn/iocoder/mall/search/biz/service/ProductSearchServiceImpl.class

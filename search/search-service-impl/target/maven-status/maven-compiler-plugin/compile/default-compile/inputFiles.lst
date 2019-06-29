@@ -1,0 +1,7 @@
+/Users/noudepc/IdeaProjects/onemall/search/search-service-impl/src/main/java/cn/iocoder/mall/search/biz/config/JPAConfiguration.java
+/Users/noudepc/IdeaProjects/onemall/search/search-service-impl/src/main/java/cn/iocoder/mall/search/biz/convert/ProductSearchConvert.java
+/Users/noudepc/IdeaProjects/onemall/search/search-service-impl/src/main/java/cn/iocoder/mall/search/biz/constant/FieldAnalyzer.java
+/Users/noudepc/IdeaProjects/onemall/search/search-service-impl/src/main/java/cn/iocoder/mall/search/biz/dataobject/ESProductDO.java
+/Users/noudepc/IdeaProjects/onemall/search/search-service-impl/src/main/java/cn/iocoder/mall/search/biz/service/ProductSearchServiceImpl.java
+/Users/noudepc/IdeaProjects/onemall/search/search-service-impl/src/main/java/cn/iocoder/mall/search/biz/mq/PayTransactionPaySuccessConsumer.java
+/Users/noudepc/IdeaProjects/onemall/search/search-service-impl/src/main/java/cn/iocoder/mall/search/biz/dao/ProductRepository.java

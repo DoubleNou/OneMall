@@ -22,6 +22,8 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.apache.dubbo.config.annotation.Reference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -33,6 +35,8 @@ import static cn.iocoder.common.framework.vo.CommonResult.success;
 @RequestMapping(MallConstants.ROOT_PATH_ADMIN + "/admin")
 @Api("管理员模块")
 public class AdminController {
+
+    private static final Logger LOG = LoggerFactory.getLogger(AdminController.class);
 
     @Reference(validation = "true", version = "${dubbo.provider.ResourceService.version}")
     private ResourceService resourceService;

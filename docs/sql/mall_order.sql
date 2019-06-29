@@ -31,7 +31,7 @@ CREATE TABLE `cart_item` (
   `sku_id` int(11) NOT NULL COMMENT '商品 SKU 编号',
   `quantity` int(11) NOT NULL COMMENT '商品购买数量',
   `order_id` int(11) DEFAULT NULL COMMENT '订单编号',
-  `order_create_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT '订单创建时间',
+  `order_create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '订单创建时间',
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
   PRIMARY KEY (`id`)

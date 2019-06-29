@@ -12,7 +12,7 @@ let dataSources='local';//local=本地，其他值代表非本地
 
 
 if (!process.env.NODE_ENV || process.env.NODE_ENV == 'development') {
-	baseUrl='http://127.0.0.1';
+	baseUrl='http://180.167.213.26:18099';
 }else if(process.env.NODE_ENV == 'production'){
 	baseUrl = 'http://180.167.213.26:18099';
     dataSources='production';

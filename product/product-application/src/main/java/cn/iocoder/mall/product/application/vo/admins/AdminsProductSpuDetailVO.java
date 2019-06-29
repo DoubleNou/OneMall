@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
 import java.util.List;
 
 @ApiModel(value = "商品 SPU 详细 VO", description = "包括 SKU 信息 VO")

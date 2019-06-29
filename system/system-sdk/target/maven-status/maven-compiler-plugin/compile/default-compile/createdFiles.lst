@@ -1,0 +1,6 @@
+cn/iocoder/mall/admin/sdk/dict/DictValProcessor.class
+cn/iocoder/mall/admin/sdk/dict/DictVal.class
+cn/iocoder/mall/admin/sdk/context/AdminSecurityContext.class
+cn/iocoder/mall/admin/sdk/context/AdminSecurityContextHolder.class
+cn/iocoder/mall/admin/sdk/dict/Bean.class
+cn/iocoder/mall/admin/sdk/interceptor/AdminSecurityInterceptor.class
